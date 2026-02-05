@@ -1,0 +1,138 @@
+ export interface Itinerary {
+   id: string;
+   title: string;
+   destination: string;
+   region: "Kashmir Valley" | "Jammu" | "Ladakh";
+   days: number;
+   budgetMin: number;
+   budgetMax: number;
+   rating: number;
+   reviewCount: number;
+   image: string;
+   submittedBy: string;
+   submittedDate: string;
+   status: "pending" | "approved" | "rejected";
+ }
+ 
+ export const itineraries: Itinerary[] = [
+   {
+     id: "1",
+     title: "7 Days in Kashmir Valley",
+     destination: "Srinagar, Gulmarg, Pahalgam",
+     region: "Kashmir Valley",
+     days: 7,
+     budgetMin: 35000,
+     budgetMax: 45000,
+     rating: 4.8,
+     reviewCount: 124,
+     image: "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=800",
+     submittedBy: "Rahul Sharma",
+     submittedDate: "2026-01-28",
+     status: "approved",
+   },
+   {
+     id: "2",
+     title: "Vaishno Devi Pilgrimage",
+     destination: "Katra, Vaishno Devi",
+     region: "Jammu",
+     days: 3,
+     budgetMin: 15000,
+     budgetMax: 20000,
+     rating: 4.6,
+     reviewCount: 89,
+     image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800",
+     submittedBy: "Priya Patel",
+     submittedDate: "2026-01-25",
+     status: "approved",
+   },
+   {
+     id: "3",
+     title: "Gulmarg Ski Adventure",
+     destination: "Gulmarg",
+     region: "Kashmir Valley",
+     days: 4,
+     budgetMin: 40000,
+     budgetMax: 55000,
+     rating: 4.9,
+     reviewCount: 67,
+     image: "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=800",
+     submittedBy: "Amit Kumar",
+     submittedDate: "2026-01-30",
+     status: "approved",
+   },
+   {
+     id: "4",
+     title: "Pahalgam Valley Explorer",
+     destination: "Pahalgam, Betaab Valley, Aru",
+     region: "Kashmir Valley",
+     days: 5,
+     budgetMin: 30000,
+     budgetMax: 40000,
+     rating: 4.7,
+     reviewCount: 93,
+     image: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=800",
+     submittedBy: "Sneha Gupta",
+     submittedDate: "2026-01-22",
+     status: "approved",
+   },
+   {
+     id: "5",
+     title: "Sonamarg Golden Meadows",
+     destination: "Sonamarg, Thajiwas Glacier",
+     region: "Kashmir Valley",
+     days: 3,
+     budgetMin: 20000,
+     budgetMax: 28000,
+     rating: 4.5,
+     reviewCount: 56,
+     image: "https://images.unsplash.com/photo-1566837945700-30057527ade0?w=800",
+     submittedBy: "Vikram Singh",
+     submittedDate: "2026-02-01",
+     status: "pending",
+   },
+   {
+     id: "6",
+     title: "Patnitop Hill Station Escape",
+     destination: "Patnitop, Sanasar",
+     region: "Jammu",
+     days: 4,
+     budgetMin: 18000,
+     budgetMax: 25000,
+     rating: 4.3,
+     reviewCount: 42,
+     image: "https://images.unsplash.com/photo-1486911278844-a81c5267e227?w=800",
+     submittedBy: "Neha Verma",
+     submittedDate: "2026-02-02",
+     status: "pending",
+   },
+   {
+     id: "7",
+     title: "Complete Kashmir Circuit",
+     destination: "Srinagar, Dal Lake, Gulmarg, Pahalgam, Sonamarg",
+     region: "Kashmir Valley",
+     days: 10,
+     budgetMin: 60000,
+     budgetMax: 80000,
+     rating: 4.9,
+     reviewCount: 178,
+     image: "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800",
+     submittedBy: "Arjun Mehta",
+     submittedDate: "2026-01-20",
+     status: "approved",
+   },
+   {
+     id: "8",
+     title: "Budget Friendly Srinagar Trip",
+     destination: "Srinagar, Dal Lake, Mughal Gardens",
+     region: "Kashmir Valley",
+     days: 4,
+     budgetMin: 15000,
+     budgetMax: 22000,
+     rating: 4.4,
+     reviewCount: 112,
+     image: "https://images.unsplash.com/photo-1593181629936-11c609b8db9b?w=800",
+     submittedBy: "Kavita Reddy",
+     submittedDate: "2026-02-03",
+     status: "pending",
+   },
+ ];
