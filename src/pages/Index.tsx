@@ -36,16 +36,16 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
+      <section className="relative py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/10 bg-primary">
         <div className="container mx-auto px-6">
           <div className="items-center text-center max-w-3xl mx-auto flex flex-col">
             <img alt="TripTales Logo" className="h-32 w-auto mb-8 shadow-lg rounded-3xl" src="/lovable-uploads/6c44e4e5-fb7d-4b80-92b0-1589e20fb9bb.png" />
             
-            <h1 className="text-5xl font-bold mb-4 text-secondary bg-primary-foreground">
+            <h1 className="text-5xl font-bold mb-4 bg-white/0 text-primary">
               Plan smarter. Travel better.
             </h1>
             
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
+            <p className="text-xl mb-8 max-w-2xl text-muted-foreground">
               Discover authentic travel itineraries for Jammu & Kashmir, 
               shared and rated by real travelers.
             </p>
