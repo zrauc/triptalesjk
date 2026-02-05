@@ -38,10 +38,10 @@ const Index = () => {
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
-            <img src={logo} alt="TripTales Logo" className="h-32 w-auto mb-8 shadow-lg rounded-3xl" />
+          <div className="items-center text-center max-w-3xl mx-auto flex flex-col">
+            <img alt="TripTales Logo" className="h-32 w-auto mb-8 shadow-lg rounded-3xl" src="/lovable-uploads/6c44e4e5-fb7d-4b80-92b0-1589e20fb9bb.png" />
             
-            <h1 className="text-5xl font-bold text-foreground mb-4">
+            <h1 className="text-5xl font-bold mb-4 text-secondary bg-primary-foreground">
               Plan smarter. Travel better.
             </h1>
             
