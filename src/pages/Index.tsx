@@ -5,42 +5,41 @@ import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import logo from "@/assets/logo.jpeg";
-
 const Index = () => {
-  const howItWorks = [
-    {
-      icon: Search,
-      title: "Explore Real Itineraries",
-      description: "Browse through authentic travel plans shared by real travelers who've explored Jammu & Kashmir.",
-    },
-    {
-      icon: Users,
-      title: "Community Rates Them",
-      description: "Fellow travelers rate and review itineraries, helping you find the best experiences.",
-    },
-    {
-      icon: ShieldCheck,
-      title: "Admin Approval Ensures Quality",
-      description: "Every itinerary is verified by our team to ensure authenticity and accuracy.",
-    },
-  ];
-
-  const featuredDestinations = [
-    { name: "Srinagar", image: "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=400" },
-    { name: "Gulmarg", image: "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=400" },
-    { name: "Pahalgam", image: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=400" },
-    { name: "Vaishno Devi", image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=400" },
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const howItWorks = [{
+    icon: Search,
+    title: "Explore Real Itineraries",
+    description: "Browse through authentic travel plans shared by real travelers who've explored Jammu & Kashmir."
+  }, {
+    icon: Users,
+    title: "Community Rates Them",
+    description: "Fellow travelers rate and review itineraries, helping you find the best experiences."
+  }, {
+    icon: ShieldCheck,
+    title: "Admin Approval Ensures Quality",
+    description: "Every itinerary is verified by our team to ensure authenticity and accuracy."
+  }];
+  const featuredDestinations = [{
+    name: "Srinagar",
+    image: "https://images.unsplash.com/photo-1597074866923-dc0589150358?w=400"
+  }, {
+    name: "Gulmarg",
+    image: "https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=400"
+  }, {
+    name: "Pahalgam",
+    image: "https://images.unsplash.com/photo-1595815771614-ade9d652a65d?w=400"
+  }, {
+    name: "Vaishno Devi",
+    image: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=400"
+  }];
+  return <div className="min-h-screen bg-background">
       <Header />
       
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
         <div className="container mx-auto px-6">
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
-            <img src={logo} alt="TripTales Logo" className="h-32 w-auto mb-8 rounded-2xl shadow-lg" />
+            <img src={logo} alt="TripTales Logo" className="h-32 w-auto mb-8 shadow-lg rounded-3xl" />
             
             <h1 className="text-5xl font-bold text-foreground mb-4">
               Plan smarter. Travel better.
@@ -77,8 +76,7 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {howItWorks.map((step, index) => (
-              <Card key={index} className="text-center border-0 shadow-md hover:shadow-lg transition-shadow">
+            {howItWorks.map((step, index) => <Card key={index} className="text-center border-0 shadow-md hover:shadow-lg transition-shadow">
                 <CardContent className="p-8">
                   <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                     <step.icon className="h-8 w-8 text-primary" />
@@ -86,8 +84,7 @@ const Index = () => {
                   <h3 className="text-xl font-semibold text-foreground mb-3">{step.title}</h3>
                   <p className="text-muted-foreground">{step.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -103,22 +100,16 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-4 gap-6">
-            {featuredDestinations.map((destination) => (
-              <Link key={destination.name} to="/explore" className="group">
+            {featuredDestinations.map(destination => <Link key={destination.name} to="/explore" className="group">
                 <div className="relative h-64 rounded-xl overflow-hidden">
-                  <img
-                    src={destination.image}
-                    alt={destination.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
+                  <img src={destination.image} alt={destination.name} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                   <div className="absolute bottom-4 left-4 flex items-center gap-2 text-white">
                     <MapPin className="h-5 w-5" />
                     <span className="text-lg font-semibold">{destination.name}</span>
                   </div>
                 </div>
-              </Link>
-            ))}
+              </Link>)}
           </div>
         </div>
       </section>
@@ -168,8 +159,6 @@ const Index = () => {
       </section>
 
       <Footer />
-      </div>
-  );
+      </div>;
 };
-
 export default Index;
