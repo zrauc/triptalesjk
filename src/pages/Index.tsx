@@ -36,7 +36,7 @@ const Index = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/10 bg-primary">
+      <section className="relative py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/10 bg-primary shadow-md border-dashed">
         <div className="container mx-auto px-6">
           <div className="items-center text-center max-w-3xl mx-auto flex flex-col">
             <img alt="TripTales Logo" className="h-32 w-auto mb-8 shadow-lg rounded-3xl" src="/lovable-uploads/6c44e4e5-fb7d-4b80-92b0-1589e20fb9bb.png" />
